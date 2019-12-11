@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --config vendor/elgentos/magento2-react/webpack.config.js --mode development && webpack --mode development",
-    "watch": "webpack --config vendor/elgentos/magento2-react/webpack.config.js --mode development && webpack --watch --mode development",
-    "build": "webpack --config vendor/elgentos/magento2-react/webpack.config.js --mode production && webpack --mode production"
+    "dev": "webpack --mode development",
+    "watch": "webpack --mode development",
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "description": "",
@@ -16,7 +16,6 @@
   "devDependencies": {
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
-    "@babel/preset-react": "^7.7.4",
     "babel-loader": "^8.0.6",
     "glob": "^7.1.6",
     "path": "^0.12.7",

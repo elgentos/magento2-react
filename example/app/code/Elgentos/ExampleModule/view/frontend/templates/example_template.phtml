@@ -1,0 +1,9 @@
+<div id="example"></div>
+
+<script>
+    require([
+        'example'
+    ], function (example) {
+        example(document.getElementById('example'), {foo: "bar"});
+    });
+</script>

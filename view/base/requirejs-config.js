@@ -1,7 +1,7 @@
 var config = {
     map: {
         "*": {
-            "react": "Elgentos_React/js/react.bundle",
+            "magento2-react": "Elgentos_React/js/react.bundle",
         }
     }
 };
