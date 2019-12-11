@@ -12,7 +12,13 @@ composer require elgentos/magento2-react
 
 ## NPM Dependencies
 
-To install the npm dependencies either use the package.sample.json that was copied to the root of your installation or execute these flowing steps:
+To install the npm dependencies you could rename the `package.json.sample` to `package.json` and run:
+
+```bash
+npm install
+```
+
+Another option is to walk through these steps:
 
 1) execute these commands:
 
@@ -24,7 +30,7 @@ npm install react react-dom prop-types
 npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-loader glob path webpack webpack-cli
 ```
 
-2) add these scripts to your package.json file:
+2) add these scripts to your `package.json` file:
 
 ```json
 
@@ -39,6 +45,10 @@ npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-l
 }
 
 ```
+
+## Webpack Config
+
+For your webpack configuration you can rename the `webpack.config.js.sample` to `webpack.config.js` or you can insert/integrate this [config](example/webpack.config.js) by hand.
 
 # Usage
 

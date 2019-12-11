@@ -1,6 +1,6 @@
 {
   "name": "elgentos/magento2-react",
-  "type": "magento2-module",
+  "type": "magento2-component",
   "version": "0.0.1",
   "license": "OSL-3.0",
   "description": "Module to add React to Magento 2 frontend",
@@ -28,11 +28,11 @@
     "map": [
       [
         "example/webpack.config.js",
-        "webpack.config.js"
+        "webpack.config.js.sample"
       ],
       [
         "example/package.json",
-        "package.sample.json"
+        "package.json.sample"
       ]
     ]
   }
