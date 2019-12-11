@@ -4,9 +4,13 @@ This module is based on https://github.com/yireo-training/Yireo_React.
 
 Execute these commands to install all required dependencies.
 
-`npm install react react-dom prop-types`
+```bash
+npm install react react-dom prop-types
+```
 
-`npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-loader glob path webpack webpack-cli`
+```bash
+npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-loader glob path webpack webpack-cli
+```
 
 
 Put this file in your root:
