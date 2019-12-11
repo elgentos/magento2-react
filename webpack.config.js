@@ -4,9 +4,6 @@ module.exports = (env, arg) => {
     return {
         entry: path.resolve(__dirname, 'index.js'),
         externals: ['mage/translate'],
-        resolve: {
-            modules: [arg.node_modules ? arg.node_modules : "../../node_modules"]
-        },
         module: {
             rules: [
                 {

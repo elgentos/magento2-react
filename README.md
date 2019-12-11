@@ -37,9 +37,9 @@ npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-l
 {
   ...
   "scripts": {
-    "dev": "webpack --config vendor/elgentos/magento2-react/webpack.config.js --node_modules ../../../node_modules --mode development && webpack --mode development",
-    "watch": "webpack --config vendor/elgentos/magento2-react/webpack.config.js --node_modules ../../../node_modules --mode development && webpack --watch --mode development",
-    "build": "webpack --config vendor/elgentos/magento2-react/webpack.config.js --node_modules ../../../node_modules --mode production && webpack --mode production"
+    "dev": "webpack --config vendor/elgentos/magento2-react/webpack.config.js --mode development && webpack --mode development",
+    "watch": "webpack --config vendor/elgentos/magento2-react/webpack.config.js --mode development && webpack --watch --mode development",
+    "build": "webpack --config vendor/elgentos/magento2-react/webpack.config.js --mode production && webpack --mode production"
   },
   ...
 }

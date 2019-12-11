@@ -3,9 +3,9 @@
     "author": "Magento Commerce Inc.",
     "description": "Magento2 node modules dependencies for local development",
     "scripts": {
-        "dev": "webpack --config vendor/elgentos/magento2-react/webpack.config.js --node_modules ../../../node_modules --mode development && webpack --mode development",
-        "watch": "webpack --config vendor/elgentos/magento2-react/webpack.config.js --node_modules ../../../node_modules --mode development && webpack --watch --mode development",
-        "build": "webpack --config vendor/elgentos/magento2-react/webpack.config.js --node_modules ../../../node_modules --mode production && webpack --mode production"
+        "dev": "webpack --config vendor/elgentos/magento2-react/webpack.config.js --mode development && webpack --mode development",
+        "watch": "webpack --config vendor/elgentos/magento2-react/webpack.config.js --mode development && webpack --watch --mode development",
+        "build": "webpack --config vendor/elgentos/magento2-react/webpack.config.js --mode production && webpack --mode production"
     },
     "license": "(OSL-3.0 OR AFL-3.0)",
     "repository": {
