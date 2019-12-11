@@ -115,4 +115,4 @@ atlassian*
 /.user.ini
 .php_cs.cache
 
-web/js/*.js
+view/base/web/js/*.js
