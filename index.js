@@ -1,8 +1,7 @@
-define(["mage/translate"], (translate) => {
-    console.log('react222', translate);
-    window.React = require("react");
-    window.ReactDOM = require("react-dom");
-    window.PropTypes = require("prop-types");
+define(["mage/translate", "react", "react-dom", "prop-types"], (translate, React, ReactDOM, PropTypes) => {
+    window.React = React;
+    window.ReactDOM = ReactDOM;
+    window.PropTypes = PropTypes;
 
     // Setting the ReactContainer
     window.MagentoContainerContext = React.createContext({
