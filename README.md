@@ -27,7 +27,7 @@ npm install react react-dom prop-types
 ```
 
 ```bash
-npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-loader glob path webpack webpack-cli
+npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-loader glob path webpack webpack-cli uglifyjs-webpack-plugin
 ```
 
 2) add these scripts to your `package.json` file:
@@ -76,7 +76,7 @@ npm run build # for running a production build
 # Translations and RequireJS functions
 
 To abstract some of the default magento javascript functions there is a context added with these functions.
-You can use this context with this JSX: 
+You can use this context in this way: 
 
 ```javascript
 
@@ -88,3 +88,5 @@ export default ({children}) => (
 );
 
 ```
+
+For the deployment of the static content we have added the `__("Translation");` to the patterns that should be parsed so you are free to use this abstraction.
