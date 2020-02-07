@@ -72,3 +72,19 @@ npm run watch # for continually watching your files on changes
 ```bash
 npm run build # for running a production build
 ```
+
+# Translations and RequireJS functions
+
+To abstract some of the default magento javascript functions there is a context added with these functions.
+You can use this context with this JSX: 
+
+```javascript
+
+export default ({children}) => (
+
+    <MagentoContainerContext.Consumer>
+        {({translate, require}) => children(translate, require.toUrl)}
+    </MagentoContainerContext.Consumer>
+);
+
+```
