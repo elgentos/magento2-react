@@ -6,6 +6,6 @@ define(["mage/translate", "react", "react-dom", "prop-types"], (translate, React
     // Setting the ReactContainer
     window.MagentoContainerContext = React.createContext({
         require: requirejs,
-        translate
+        __: translate
     });
 });

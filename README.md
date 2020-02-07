@@ -83,7 +83,7 @@ You can use this context with this JSX:
 export default ({children}) => (
 
     <MagentoContainerContext.Consumer>
-        {({translate, require}) => children(translate, require.toUrl)}
+        {({__, require}) => children(__, require.toUrl)}
     </MagentoContainerContext.Consumer>
 );
 
