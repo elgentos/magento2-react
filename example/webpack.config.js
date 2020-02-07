@@ -5,8 +5,14 @@ const appRoot = path.resolve(__dirname, 'app', 'code');
 
 const entries = {};
 
-const appPaths = glob.sync("app/code/*/*/view/*/src/*.define.js", {});
-appPaths.forEach(file => {
+const codePaths = glob.sync("app/code/*/*/view/*/src/*.define.js", {});
+codePaths.forEach(file => {
+    const relativeFile = path.relative(appRoot, file);
+    entries[path.dirname(path.dirname(relativeFile)) + '/web/js/' + path.basename(file.replace('.define.js', ''))] = "./" + file;
+});
+
+const designPaths = glob.sync("app/design/*/*/*/*/src/*.define.js", {});
+designPaths.forEach(file => {
     const relativeFile = path.relative(appRoot, file);
     entries[path.dirname(path.dirname(relativeFile)) + '/web/js/' + path.basename(file.replace('.define.js', ''))] = "./" + file;
 });
