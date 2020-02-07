@@ -23,6 +23,7 @@ if (Object.keys(entries).length === 0) {
 
 module.exports = (env, arg) => {
     return {
+        devtool: 'inline-source-map',
         entry: entries,
         externals: ["magento2-react"],
         module: {
